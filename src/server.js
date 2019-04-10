@@ -40,5 +40,5 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
 
 app.use(require('./routes'));
 
-//rodar na porta
-serven.listen(3333);
+// variavel de ambiente||rodar na porta
+serven.listen(process.env.PORT || 3333);
